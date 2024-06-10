@@ -2,7 +2,7 @@
 
 This project aims to demonstrate expertise in database management, virtualization, and transformation by utilizing the Northwind database hosted on PostgreSQL. The Northwind database is a well-known sample database that captures sales transactions for a company that sells specialty foods worldwide. It includes data on orders, products, employees, and customers, making it ideal for illustrating business analytics, data modeling, and database design.
 
-![Project Overivew](img/project.png)
+![Project Overivew](img/project_overview.png)
 
 ## Getting Started
 
