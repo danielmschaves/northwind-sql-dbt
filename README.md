@@ -12,7 +12,7 @@ Use the provided SQL file `northwind.sql` to populate your database.
 
 ### With Docker and Docker Compose
 
-#### Prerequisites: Install Docker and Docker Compose
+#### Prerequisites: Install Git and Docker
 
 - [Git](https://git-scm.com/downloads): To clone the repository.
 - [Docker](https://www.docker.com/products/docker-desktop): To execute containers PostgreSQL, pgAdmin and dbt-core.
@@ -49,5 +49,29 @@ Use the following credentials to connect to the database:
 - **Database name**: `northwind`
 - **User**: `postgres`
 - **Password**: `postgres`
+
+#### 4. Navigate to the Local Repository
+
+Navigate to the local repository using the following command on terminal:
+
+```sh
+cd northwind
+```
+
+#### 5. Check dbt connection
+
+Use the following command on terminal:
+
+```sh
+dbt debug
+```
+
+#### 6. Run dbt
+
+Use the following command on terminal:
+
+```sh
+dbt run
+```
 
 
