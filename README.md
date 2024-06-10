@@ -10,7 +10,7 @@ This project aims to demonstrate expertise in database management, virtualizatio
 
 Use the provided SQL file `northwind.sql` to populate your database.
 
-### With Docker and Docker Compose
+### With Docker
 
 #### Prerequisites: Install Git and Docker
 
