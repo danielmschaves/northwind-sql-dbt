@@ -34,6 +34,9 @@ models:
       materialized: view
     staging:
       materialized: view
-    mart:
-      +schema: "gold"  # Define o schema "gold" para as tabelas mart_
+    core:
+      +schema: "gold"  
       materialized: table
+    mart:
+      +schema: "gold"  
+      materialized: view
