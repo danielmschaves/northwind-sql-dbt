@@ -1,9 +1,9 @@
 {{ config(
     schema='gold',
-    materialized='table'
+    materialized='view'
 ) }}
 
-with clientes_to_marketing as (
+with clients_to_marketing as (
     select 
         customers.company_name, 
         sum(order_details.unit_price * order_details.quantity * (1.0 - order_details.discount)) as total,
@@ -20,5 +20,5 @@ with clientes_to_marketing as (
         total desc
 )
 select *
-from clientes_to_marketing
+from clients_to_marketing
 where group_number >= 3

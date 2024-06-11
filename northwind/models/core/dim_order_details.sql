@@ -3,7 +3,7 @@
     materialized='table'
 ) }}
 
-with dim_product as (
+with dim_order_details as (
 
 select
     order_id,
@@ -14,3 +14,8 @@ select
 from
     {{ ref('stg_order_details') }}
 )
+
+select
+    *
+from
+    dim_order_details

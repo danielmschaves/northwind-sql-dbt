@@ -37,6 +37,6 @@ models:
     core:
       +schema: "gold"  
       materialized: table
-    mart:
+    marts:
       +schema: "gold"  
       materialized: view

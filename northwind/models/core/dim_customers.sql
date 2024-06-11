@@ -4,7 +4,6 @@
 ) }}
 
 with dim_customers as (
-
 select
     customer_id,
     company_name,
@@ -20,3 +19,8 @@ select
 from
     {{ ref('stg_customers') }}
 )
+
+select
+    *
+from
+    dim_customers
